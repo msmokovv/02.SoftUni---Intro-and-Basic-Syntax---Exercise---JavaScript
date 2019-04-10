@@ -1,0 +1,12 @@
+function rounding([number, precision]) {
+    let a = Number(number);
+    let b = Number(precision);
+   
+    if(a > 15) {
+        a = 15;
+    }
+
+    a = a.toFixed(b);
+    console.log(parseFloat(a));
+}
+rounding([3.141592647,2])
