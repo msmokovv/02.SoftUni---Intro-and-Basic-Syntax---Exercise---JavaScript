@@ -1,0 +1,142 @@
+function vacation(str,strs,strss) {
+    let groupOfPeople = Number(str);
+    let typeOfTheGroup = String(strs);
+    let dayOfTheWeek = String(strss);
+    
+    let discount = 0;
+    let price = 0;
+    let priceAll = price * groupOfPeople;
+    let priceWithDiscount = priceAll - ((price * groupOfPeople) / 100) * discount;
+        
+    
+            if(typeOfTheGroup == "Students"){
+                    if(dayOfTheWeek == "Friday"){
+                        if(groupOfPeople >= 30){
+                                discount = 15;
+                                price = 8.45;
+                                let priceAll = price * groupOfPeople;
+                                let priceWithDiscount = priceAll - ((price * groupOfPeople) / 100) * discount;
+                                console.log("Total price: " + priceWithDiscount.toFixed(2));
+                            }
+                        else{
+                                price = 8.45;
+                                let priceAll = price * groupOfPeople;
+                                console.log("Total price: " + priceAll.toFixed(2));
+                            }
+                        }
+                    else if(dayOfTheWeek == "Saturday"){
+                        if(groupOfPeople >= 30){
+                                discount = 15;
+                                price = 9.80;
+                                let priceAll = price * groupOfPeople;
+                                let priceWithDiscount = priceAll - ((price * groupOfPeople) / 100) * discount;
+                                console.log("Total price: " + priceWithDiscount.toFixed(2));
+                            }
+                        else{
+                                price = 9.80;
+                                let priceAll = price * groupOfPeople;
+                                console.log("Total price: " + priceAll.toFixed(2));
+                            }
+                    }
+                    else if(dayOfTheWeek == "Sunday"){
+                        if(groupOfPeople >= 30){
+                                discount = 15;
+                                price = 10.46;
+                                let priceAll = price * groupOfPeople;
+                                let priceWithDiscount = priceAll - ((price * groupOfPeople) / 100) * discount;
+                                console.log("Total price: " + priceWithDiscount.toFixed(2));
+                    }
+                    else{
+                                price = 10.46;
+                                let priceAll = price * groupOfPeople;
+                                console.log("Total price: " + priceAll.toFixed(2));
+                    }
+                }
+            }
+            else if(typeOfTheGroup == "Regular"){
+                            if(dayOfTheWeek == "Friday"){
+                                if(groupOfPeople >= 10 && groupOfPeople <= 20){
+                                    discount = 5;
+                                    price = 15;
+                                    let priceAll = price * groupOfPeople;
+                                    let priceWithDiscount = priceAll - ((price * groupOfPeople) / 100) * discount;
+                                    console.log("Total price: " + priceWithDiscount.toFixed(2));
+                                }
+                            else{
+                                    price = 15;
+                                    let priceAll = price * groupOfPeople;
+                                    console.log("Total price: " + priceAll.toFixed(2));
+                                }
+                            }
+                        else if(dayOfTheWeek == "Saturday"){
+                                    if(groupOfPeople >= 10 && groupOfPeople <= 20){
+                                    discount = 5;
+                                    price = 20;
+                                    let priceAll = price * groupOfPeople;
+                                    let priceWithDiscount = priceAll - ((price * groupOfPeople) / 100) * discount;
+                                    console.log("Total price: " + priceWithDiscount.toFixed(2));
+                                }
+                            else{
+                                    price = 20;
+                                    let priceAll = price * groupOfPeople;
+                                    console.log("Total price: " + priceAll.toFixed(2));
+                                }
+                        }
+                        else if(dayOfTheWeek == "Sunday"){
+                                    if(groupOfPeople >= 10 && groupOfPeople <= 20){
+                                    discount = 5;
+                                    price = 22.50;
+                                    let priceAll = price * groupOfPeople;
+                                    let priceWithDiscount = priceAll - ((price * groupOfPeople) / 100) * discount;
+                                    console.log("Total price: " + priceWithDiscount.toFixed(2));
+                        }
+                        else{
+                                    price = 22.50;
+                                    let priceAll = price * groupOfPeople;
+                                    console.log("Total price: " + priceAll.toFixed(2));
+                        }
+                    }
+                }
+            else if(typeOfTheGroup == "Business"){
+                            if(dayOfTheWeek == "Friday"){
+                                if(groupOfPeople >= 100){
+                                    groupOfPeople = groupOfPeople - 10;
+                                    price = 10.90;
+                                    let priceAll = price * groupOfPeople;
+                                    console.log("Total price: " + priceAll.toFixed(2));
+                                }
+                            else{
+                                    price = 10.90;
+                                    let priceAll = price * groupOfPeople;
+                                    console.log("Total price: " + priceAll.toFixed(2));
+                                }
+                            }
+                        else if(dayOfTheWeek == "Saturday"){
+                                    if(groupOfPeople >= 100){
+                                    groupOfPeople = groupOfPeople - 10;
+                                    price = 15.60;
+                                    let priceAll = price * groupOfPeople;
+                                    console.log("Total price: " + priceAll.toFixed(2));
+                                }
+                            else{
+                                    price = 15.60;
+                                    let priceAll = price * groupOfPeople;
+                                    console.log("Total price: " + priceAll.toFixed(2));
+                                }
+                        }
+                        else if(dayOfTheWeek == "Sunday"){
+                                    if(groupOfPeople >= 100){
+                                    groupOfPeople = groupOfPeople - 10;
+                                    price = 16.00;
+                                    let priceAll = price * groupOfPeople;
+                                    console.log("Total price: " + priceAll.toFixed(2));
+                        }
+                        else{
+                                    price = 16.00;
+                                    let priceAll = price * groupOfPeople;
+                                    console.log("Total price: " + priceAll.toFixed(2));
+                        }
+                    }
+                }             
+            }
+ vacation(101,"Business","Friday")
